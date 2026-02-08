@@ -1,0 +1,277 @@
+{
+  "info": {
+    "_postman_id": "bd65c19f-23d9-4ebc-8ea0-cfb121a7027b",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "REGISTRO",
+      "id": "a6926057-e7c8-4c7d-ad48-3e0f77f75d72",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"lucas\",\r\n  \"password\": \"DavidGuetta123\",\r\n  \"email\": \"lucas@live.com\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LOGIN",
+      "id": "b0ec0827-51fb-4d5b-a9b5-65d050a02af7",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"fedeavila\",\r\n  \"password\": \"DavidGuetta123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NEW_CHAT",
+      "id": "70a3cf75-3434-4742-8cd0-53f5b9815bb3",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "b772fd00-d615-4c3d-a116-a2675c8e981d"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"users\": [\"6988f8680319db0fb08432f4\", \"6988f87f0319db0fb08432f6\"],\r\n  \"name\": \"CHAT ENTRE LOS DOS PRIMOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/chats",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "chats"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NEW_MESSAGE",
+      "id": "8f9c05aa-7779-4af8-a5f7-93b5419e91d8",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "28f126ee-8558-487f-b64d-63108d4b5807"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"chatId\": \"6988fa240319db0fb0843306\",\r\n  \"userId\": \"6988f8680319db0fb08432f4\",\r\n  \"text\": \"HOLA FLORENCIA, QUE ESTAS HACIENDO???\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/messages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_ALL_USERS",
+      "id": "54624c4b-4930-4993-8a57-de77bd45ffcf",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "5ebf8c25-bed0-418c-bd39-e579ea44be5a"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/users/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_ALL_CHATS",
+      "id": "0f244a5b-64b2-4efa-8002-e4a01c888be0",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "3429c1a3-6e34-4ce7-ad22-ecafca2dacd7"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"users\": [\"6987f0203df40db5da351f9a\", \"6987f06b3df40db5da351f9c\"],\r\n  \"name\": \"Chat de prueba\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:4000/chats",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "chats"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE_USER_BY_ID",
+      "id": "b31c9769-84ec-487b-b3db-7bad898fba78",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "7166574f-1643-4ed1-b7fc-530838914350"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/users/6988f6fe0319db0fb08432ee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "users",
+            "6988f6fe0319db0fb08432ee"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ACTUALIZAR_CHAT_BY_ID",
+      "id": "7c100e92-bcb4-4753-a957-640a6fcf42cf",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmNmZlMDMxOWRiMGZiMDg0MzJlZSIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTgzOTg5LCJleHAiOjE3NzA1ODc1ODl9.dWOc2DoQJRgR7OBGImwnb5wB4EoMBQSoLQNsSVrVLUo",
+            "type": "text",
+            "uuid": "01e9fbfc-f915-418d-be72-858660621121"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CHAT ENTRE LOS DOS PRIMITOS\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/chats/6988fa240319db0fb0843306",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "chats",
+            "6988fa240319db0fb0843306"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "uuid": "da94fb64-0207-41eb-8d75-53164b9401dc",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
