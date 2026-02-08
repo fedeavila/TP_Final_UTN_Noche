@@ -59,66 +59,17 @@ Incluye endpoints para **usuarios, chats y mensajes**, con autenticación median
 ## 📋 Ejemplos de requests y responses
 
 ### Registro de usuario
-```http
-POST /auth/register
-Content-Type: application/json
-
-{
-  "username": "fedeavila",
-  "password": "DavidGuetta123"
-}
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "data": {
-    "_id": "67a0c1f2e4b0a5d123456789",
-    "username": "fedeavila"
-  },
-  "message": "Usuario registrado"
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/fd2136ae-90f4-4f89-9eca-afd705d2dfd8" />
 
 ---
 
 ### Login de usuario
-```http
-POST /auth/login
-Content-Type: application/json
-
-{
-  "username": "fedeavila",
-  "password": "DavidGuetta123"
-}
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/8d2ec893-5af8-493e-b277-eedec0801e45" />
 
 ---
 
 ### Acceso a rutas protegidas
-```http
-GET /users
-Authorization: Bearer <token>
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "data": [
-    { "_id": "67a0c1f2e4b0a5d123456789", "username": "fede" }
-  ]
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/5c0fd324-3306-40f3-bfc5-d4c0492b0dba" />
 
 ---
 
@@ -139,12 +90,44 @@ const getUsers = async () => {
 ---
 
 ## 📂 Colección Postman
-Se incluye una colección Postman (`TP_Final.postman_collection.json`) con todos los endpoints listos para importar y probar:
+Se incluye una colección Postman (dentro de la carpeta /postman/collections) con todos los endpoints listos para importar y probar:
 - Registro
 - Login
 - CRUD de usuarios
 - CRUD de chats
 - CRUD de mensajes
+<img width="435" height="547" alt="image" src="https://github.com/user-attachments/assets/5127fad7-170a-4361-8ced-14705656090e" />
 
+---
+
+## 🚀 Despliegue (Deployment)
+
+El proyecto se encuentra desplegado y operativo en **Render**. Se puede acceder a la API a través de la siguiente URL base:
+> 🔗 [https://tp-final-utn-noche.onrender.com](https://tp-final-utn-noche.onrender.com)
+
+## 🧪 Pruebas CRUD (API Testing)
+
+A continuación, se detallan las pruebas realizadas sobre los endpoints principales utilizando **Postman**. Se validaron las operaciones de creación, lectura, actualización y eliminación.
+
+### 🔐 Autenticación (Auth)
+* **Login:** `POST /auth/login`
+  * Envío de credenciales en formato JSON.
+  * Retorno de token JWT y validación de acceso.
+<img width="1294" height="657" alt="image" src="https://github.com/user-attachments/assets/13c5c21d-1508-49b4-86b7-2c03fcffcc78" />
+
+### 📦 Recursos (Ejemplo: Productos/Usuarios)
+* **Create:** `POST /recurso` - Creación de nuevos registros.
+<img width="1298" height="723" alt="image" src="https://github.com/user-attachments/assets/a6acaf4b-5ba1-4795-adef-cbb3921cb522" />
+
+* **Read:** `GET /recurso` - Listado completo de datos.
+<img width="1279" height="999" alt="image" src="https://github.com/user-attachments/assets/b9a793ee-084b-4617-91be-a846e782fc8b" />
+
+* **Update:** `PUT /recurso/:id` - Actualización de información existente.
+<img width="1280" height="848" alt="image" src="https://github.com/user-attachments/assets/c8bd1f22-4d30-4153-b072-f08526548acf" />
+
+* **Delete:** `DELETE /recurso/:id` - Eliminación lógica o física de registros.
+<img width="1292" height="645" alt="image" src="https://github.com/user-attachments/assets/db23bfd7-1654-4fb9-a1e4-9ef9cfa54213" />
+
+---
 
 ¡Saludos!
