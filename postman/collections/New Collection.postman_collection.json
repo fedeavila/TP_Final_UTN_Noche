@@ -272,6 +272,206 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "GET_RENDER",
+      "id": "07f4fe28-3ecd-4505-9ce2-99cdec5ba64c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LOGIN_RENDER",
+      "id": "5ee1236e-74a6-4e0e-a733-5340a06a961c",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"fedeavila\",\r\n    \"password\": \"DavidGuetta123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/auth/login",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_ALL_USERS_RENDER",
+      "id": "5d3abdd6-e0aa-42e7-9451-ccafad115a1d",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmODY4MDMxOWRiMGZiMDg0MzJmNCIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTk3NTI4LCJleHAiOjE3NzA2MDExMjh9.POZpF2f73m50Qm7PBPiDHNtXx174T3M4ThVLARHlyFY",
+            "type": "text",
+            "uuid": "5ebf8c25-bed0-418c-bd39-e579ea44be5a"
+          }
+        ],
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/users/",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTRO_RENDER",
+      "id": "a437a9d7-20d8-4553-8123-07d371c49938",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"fedeavila\",\r\n    \"password\": \"DavidGuetta123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/auth/register",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ACTUALIZAR_CHAT_BY_ID_RENDER",
+      "id": "b5054b6a-d140-4170-981d-cdc1b75033b7",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmODY4MDMxOWRiMGZiMDg0MzJmNCIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTk3NTI4LCJleHAiOjE3NzA2MDExMjh9.POZpF2f73m50Qm7PBPiDHNtXx174T3M4ThVLARHlyFY",
+            "type": "text",
+            "uuid": "01e9fbfc-f915-418d-be72-858660621121"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CHAT ENTRE LOS DOS PRIMOS DE BURZACO\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/chats/6988fa240319db0fb0843306",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "chats",
+            "6988fa240319db0fb0843306"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "uuid": "da94fb64-0207-41eb-8d75-53164b9401dc",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE_USER_BY_ID_RENDER",
+      "id": "426ae669-ad45-4a71-81c4-f975a3594987",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODhmODY4MDMxOWRiMGZiMDg0MzJmNCIsInVzZXJuYW1lIjoiZmVkZWF2aWxhIiwiaWF0IjoxNzcwNTk3NTI4LCJleHAiOjE3NzA2MDExMjh9.POZpF2f73m50Qm7PBPiDHNtXx174T3M4ThVLARHlyFY",
+            "type": "text",
+            "uuid": "7166574f-1643-4ed1-b7fc-530838914350"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tp-final-utn-noche.onrender.com/users/69892f7d73da906dfb2dcab3",
+          "protocol": "https",
+          "host": [
+            "tp-final-utn-noche",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "users",
+            "69892f7d73da906dfb2dcab3"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
