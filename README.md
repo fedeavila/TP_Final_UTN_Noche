@@ -2,6 +2,7 @@
 
 ## Estado del Proyecto
 🚧 **En curso** 🚧
+
 Este proyecto corresponde al trabajo final de la materia, desarrollado con **Node.js**, **Express** y **MongoDB (Mongoose)**.
 Actualmente se encuentra en fase de desarrollo, con endpoints básicos para usuarios, chats y mensajes.
 
@@ -73,6 +74,8 @@ Response
   }
 }
 ```
+<img width="1377" height="757" alt="image" src="https://github.com/user-attachments/assets/9c28e5f4-e20f-40fe-adc3-597d8ff9c51c" />
+
 
 ---
 
@@ -103,6 +106,8 @@ Response
   }
 }
 ```
+<img width="1376" height="831" alt="image" src="https://github.com/user-attachments/assets/04f0f83a-ddc0-4e8c-8ef6-ae646fcba1c3" />
+
 
 ---
 
@@ -133,6 +138,7 @@ Response
   }
 }
 ```
+<img width="1378" height="791" alt="image" src="https://github.com/user-attachments/assets/cc9fd3d1-698f-4d62-9639-303081448b28" />
 
 ---
 
@@ -160,6 +166,7 @@ Response
   ]
 }
 ```
+<img width="1375" height="840" alt="image" src="https://github.com/user-attachments/assets/26b7ee32-c217-4327-878e-97d79606e0fa" />
 
 ---
 
