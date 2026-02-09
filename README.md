@@ -59,66 +59,17 @@ Incluye endpoints para **usuarios, chats y mensajes**, con autenticación median
 ## 📋 Ejemplos de requests y responses
 
 ### Registro de usuario
-```http
-POST /auth/register
-Content-Type: application/json
-
-{
-  "username": "fedeavila",
-  "password": "DavidGuetta123"
-}
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "data": {
-    "_id": "67a0c1f2e4b0a5d123456789",
-    "username": "fedeavila"
-  },
-  "message": "Usuario registrado"
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/fd2136ae-90f4-4f89-9eca-afd705d2dfd8" />
 
 ---
 
 ### Login de usuario
-```http
-POST /auth/login
-Content-Type: application/json
-
-{
-  "username": "fedeavila",
-  "password": "DavidGuetta123"
-}
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/8d2ec893-5af8-493e-b277-eedec0801e45" />
 
 ---
 
 ### Acceso a rutas protegidas
-```http
-GET /users
-Authorization: Bearer <token>
-```
-
-Respuesta:
-```json
-{
-  "success": true,
-  "data": [
-    { "_id": "67a0c1f2e4b0a5d123456789", "username": "fede" }
-  ]
-}
-```
+<img width="3000" height="1781" alt="image" src="https://github.com/user-attachments/assets/5c0fd324-3306-40f3-bfc5-d4c0492b0dba" />
 
 ---
 
