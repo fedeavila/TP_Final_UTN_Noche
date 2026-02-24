@@ -1,22 +1,30 @@
+# Node.js
 node_modules/
-.env/
 dist/
+coverage/
+
+# Configuración local
+.env
 .vscode/
-.postman/
-.postman
-Postman/
 .idea/
 .DS_Store
-*.log
-*.tmp
-coverage/
-*.bak
-*.swp
-*.swo
-*.env
 *.local
 *.cache
 *.tsbuildinfo
 *.eslintcache
 *.prettiercache
+
+# Postman
+Postman/
+
+# Logs y temporales
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Archivos comprimidos
 *.zip
+*.tar.gz
+*.rar
