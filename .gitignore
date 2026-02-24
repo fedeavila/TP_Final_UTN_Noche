@@ -16,7 +16,9 @@ coverage/
 
 # Postman
 Postman/
+postman/
 .postman/
+
 
 # Logs y temporales
 *.log
