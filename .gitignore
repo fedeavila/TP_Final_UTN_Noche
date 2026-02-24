@@ -3,6 +3,7 @@ node_modules/
 dist/
 .vscode/
 .postman/
+.postman
 Postman/
 .idea/
 .DS_Store
